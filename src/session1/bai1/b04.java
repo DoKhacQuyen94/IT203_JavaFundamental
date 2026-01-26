@@ -1,3 +1,5 @@
+package session1.bai1;
+
 import java.util.Scanner;
 
 public class b04 {

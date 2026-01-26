@@ -1,3 +1,5 @@
+package session1.bai1;
+
 public class b03 {
     static void main(String[] args){
         String book1 = "Java Basic";
