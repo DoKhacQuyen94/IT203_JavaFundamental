@@ -34,11 +34,11 @@ public class Student {
     }
     public String getRank(){
         if (score >= 8.0) {
-            return "Giỏi";
+            return "Gioi";
         } else if (score >= 6.5) {
-            return "Khá";
+            return "Kha";
         } else {
-            return "Trung bình";
+            return "Trung binh";
         }
     }
     public String toString() {

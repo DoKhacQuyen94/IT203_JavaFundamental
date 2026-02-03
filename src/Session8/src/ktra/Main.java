@@ -21,6 +21,7 @@ public class Main {
                     displayStudent();
                     break;
                 case 3:
+                    searchByRank();
                     break;
                 case 4:
                     sortByRankDesc();
@@ -81,11 +82,38 @@ public class Main {
             System.out.println("--------------------");
         }
     }
+    public static void searchByRank() {
+        if (count == 0) {
+            System.out.println("Danh sách sinh viên đang trống!");
+            return;
+        }
+        System.out.print("Nhập học lực cần tìm (Gioi / Kha / Trung Binh): ");
+        sc.nextLine();
+        String rank = sc.nextLine();
+
+        boolean found = false;
+
+        for (int i = 0; i < count; i++) {
+            if (student[i].getRank().equalsIgnoreCase(rank)) {
+                System.out.println("--------------------");
+                System.out.println("Mã SV: " + student[i].getId());
+                System.out.println("Tên: " + student[i].getName());
+                System.out.println("Điểm: " + student[i].getScore());
+                System.out.println("Học lực: " + student[i].getRank());
+                found = true;
+            }
+        }
+
+        if (!found) {
+            System.out.println("Không tìm thấy sinh viên có học lực: " + rank);
+        }
+    }
+
     public static int rankValue(Student s) {
         switch (s.getRank()) {
-            case "Giỏi":
+            case "Gioi":
                 return 3;
-            case "Khá":
+            case "Kha":
                 return 2;
             default:
                 return 1;
