@@ -88,7 +88,7 @@ public class Main {
             return;
         }
         System.out.print("Nhập học lực cần tìm (Gioi / Kha / Trung Binh): ");
-        sc.nextLine();
+//        sc.nextLine();
         String rank = sc.nextLine();
 
         boolean found = false;
