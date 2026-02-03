@@ -38,7 +38,7 @@ public class Main {
                     boolean deleted = manager.delete(sc.nextLine());
                     System.out.println(deleted ? "Đã xóa thành công!" : "Không tìm thấy mã SV!");
                     break;
-                case 6: System.out.println("Hệ thống luôn tự động cập nhật điểm khi thêm/sửa."); break;
+                case 6: System.out.println("Tính Trung bình,xếp loại thành công"); break;
                 case 7:
                     System.out.println("1. Điểm TB giảm dần | 2. Tên A-Z");
                     try {

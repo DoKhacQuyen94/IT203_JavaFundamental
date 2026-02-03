@@ -47,7 +47,7 @@ public class StudentManager {
         key = key.toLowerCase();
         System.out.println("Kết quả tìm kiếm:");
         for (int i = 0; i < count; i++) {
-            if (list[i].getId().toLowerCase().contains(key) || list[i].getName().toLowerCase().contains(key)) {
+            if (list[i].getId().equalsIgnoreCase(key) || list[i].getName().toLowerCase().contains(key.toLowerCase())) {
                 list[i].display();
                 found = true;
             }
